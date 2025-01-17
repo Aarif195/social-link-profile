@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
 
 * {
   margin: 0;
@@ -13,7 +13,8 @@ body {
   flex-direction: column;
   margin: 50px auto;
   color: hsl(0, 0%, 100%);
-   font-family: "Outfit", serif;
+  font-family: "Outfit", serif;
+  cursor: pointer;
 }
 
 a {
@@ -74,6 +75,10 @@ button {
   font-weight: 700;
 }
 
+button:hover {
+  background-color: hsl(75, 94%, 57%);
+}
+
 .attribution {
   display: flex;
   flex-direction: row;
@@ -83,4 +88,15 @@ button {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* MOBILE DESIGN */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem 2rem;
+  }
+
+  .container {
+    width: 320px;
+  }
 }
