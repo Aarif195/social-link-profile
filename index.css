@@ -31,7 +31,6 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* padding: 1rem; */
 }
 
 img {
@@ -97,6 +96,7 @@ button:hover {
   }
 
   .container {
-    width: 320px;
+    width: 300px;
+    padding: 0 1rem;
   }
 }
